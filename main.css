@@ -1,0 +1,312 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #579c87;
+  font-family: "Roboto", sans-serif;
+  color: #fdcb46;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* mise en forme du contenu*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*tablette*/
+  /*ecran*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  section {
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 980px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*mise en forme des menus individuellement*/
+a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+.fas {
+  font-size: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grossi {
+  transform: scale(1);
+  transition: transform 400ms;
+  opacity: 1;
+}
+
+.menu {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  margin: 4%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /*tablette*/
+  /*écran*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .menu {
+    width: 40%;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 40%;
+    height: 500px;
+  }
+}
+.menu:hover .grossi {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+.menu.menu__one {
+  background-color: #fcdfdb;
+}
+@media screen and (max-width: 768px) {
+  .menu.menu__one {
+    padding: 0;
+  }
+}
+.menu.menu__one h2 {
+  font-family: "Devonshire", cursive;
+  font-size: 2rem;
+  color: #3c1218;
+  font-weight: 300;
+}
+.menu.menu__one p {
+  font-family: "Sriracha", cursive;
+  font-size: 2rem;
+  color: #3c1218;
+  text-transform: uppercase;
+  padding-top: 3%;
+}
+.menu.menu__two {
+  background-color: #fff5fe;
+}
+@media screen and (max-width: 768px) {
+  .menu.menu__two {
+    padding: 0;
+  }
+}
+.menu.menu__two h2 {
+  font-family: "Croissant One", cursive;
+  font-size: 1.6rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu.menu__two p {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  color: #c77412;
+  padding-top: 3%;
+}
+.menu__three {
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 768px) {
+  .menu__three {
+    padding: 0;
+  }
+}
+.menu__three__three,
+.menu__three h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__three__three,
+.menu__three p {
+  font-family: "Kalam", cursive;
+  font-size: 2rem;
+  color: #0431df;
+  padding-top: 3%;
+}
+.menu__four {
+  background-color: #fdfffd;
+}
+@media screen and (max-width: 768px) {
+  .menu__four {
+    padding: 0;
+  }
+}
+.menu__four__four,
+.menu__four h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__four__four,
+.menu__four p {
+  font-family: "Kalam", cursive;
+  font-size: 2rem;
+  color: #3d9339;
+  padding-top: 3%;
+}
+
+/* animation prochainement */
+#prochainement {
+  width: 50%;
+  margin: 6% 0 2% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #579c87;
+  color: #fdcb46;
+  border-radius: 15px 15px 15px 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 1% 3% 1% 3%;
+  color: #fdcb46;
+  /*tablette*/
+  /*écran*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  #prochainement {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1% 1% 1% 1%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #prochainement {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 1.8rem;
+    padding: 1% 1% 1% 1%;
+  }
+}
+
+.load {
+  width: 15vh;
+  height: 3vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.load__dot {
+  background-color: #15DEA5;
+  height: 100%;
+  width: 3vh;
+  border-radius: 15px;
+  animation: dot 1000ms backwards infinite;
+  animation-direction: alternate;
+}
+.load__dot--1 {
+  animation-delay: 333.3333333333ms;
+}
+.load__dot--2 {
+  animation-delay: 666.6666666667ms;
+}
+.load__dot--3 {
+  animation-delay: 1000ms;
+}
+
+@keyframes dot {
+  0% {
+    transform: scaleY(0.5) scaleX(0.5);
+    transform-origin: center;
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+    transform-origin: center;
+  }
+}
+/* mise en forme du footer*/
+@keyframes headshake {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(-2%);
+  }
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: 5%;
+  width: 100%;
+  height: 10%;
+  background-color: #579c87;
+  color: #fdcb46;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  /*tablette et ecran*/
+}
+@media screen and (min-width: 570px) {
+  footer {
+    height: 6%;
+  }
+}
+footer div {
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  /*tablette et ecran*/
+}
+footer div #btn-mention:hover {
+  animation: headshake 100ms;
+}
+footer div #btn-contact:hover {
+  animation: headshake 100ms;
+}
+@media screen and (min-width: 570px) {
+  footer div #btn-contact {
+    text-align: right;
+  }
+}
+
+#content {
+  max-width: 980px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*tablette et ecran*/
+}
+@media screen and (min-width: 570px) {
+  #content {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
