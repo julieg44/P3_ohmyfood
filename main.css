@@ -48,7 +48,8 @@ a {
 }
 
 .fas {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  padding-right: 12%;
   background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,6 +59,17 @@ a {
   transform: scale(1);
   transition: transform 400ms;
   opacity: 1;
+}
+
+#note_icon {
+  display: flex;
+  align-items: center;
+  /*tablette et écran*/
+}
+@media screen and (min-width: 570px) {
+  #note_icon {
+    flex-direction: column;
+  }
 }
 
 .menu {
@@ -91,11 +103,6 @@ a {
 .menu.menu__one {
   background-color: #fcdfdb;
 }
-@media screen and (max-width: 768px) {
-  .menu.menu__one {
-    padding: 0;
-  }
-}
 .menu.menu__one h2 {
   font-family: "Devonshire", cursive;
   font-size: 2rem;
@@ -107,15 +114,16 @@ a {
   font-size: 2rem;
   color: #3c1218;
   text-transform: uppercase;
-  padding-top: 3%;
+  line-height: 2rem;
+  /*tablette et écran*/
+}
+@media screen and (min-width: 570px) {
+  .menu.menu__one p {
+    padding-top: 15%;
+  }
 }
 .menu.menu__two {
   background-color: #fff5fe;
-}
-@media screen and (max-width: 768px) {
-  .menu.menu__two {
-    padding: 0;
-  }
 }
 .menu.menu__two h2 {
   font-family: "Croissant One", cursive;
@@ -130,47 +138,33 @@ a {
   color: #c77412;
   padding-top: 3%;
 }
-.menu__three {
+.menu.menu__three {
   background-color: #f9f9f9;
 }
-@media screen and (max-width: 768px) {
-  .menu__three {
-    padding: 0;
-  }
-}
-.menu__three__three,
-.menu__three h2 {
+.menu.menu__three h2 {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu__three__three,
-.menu__three p {
+.menu.menu__three p {
   font-family: "Kalam", cursive;
   font-size: 2rem;
   color: #0431df;
   padding-top: 3%;
 }
-.menu__four {
+.menu.menu__four {
   background-color: #fdfffd;
 }
-@media screen and (max-width: 768px) {
-  .menu__four {
-    padding: 0;
-  }
-}
-.menu__four__four,
-.menu__four h2 {
+.menu.menu__four h2 {
   font-family: "Kaushan Script", cursive;
   font-size: 2rem;
   background: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu__four__four,
-.menu__four p {
+.menu.menu__four p {
   font-family: "Kalam", cursive;
   font-size: 2rem;
   color: #3d9339;
@@ -191,7 +185,7 @@ a {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  padding: 1% 3% 1% 3%;
+  padding: 2% 3% 2% 3%;
   color: #fdcb46;
   /*tablette*/
   /*écran*/
@@ -214,19 +208,35 @@ a {
   }
 }
 
+/*loader*/
 .load {
-  width: 15vh;
-  height: 3vh;
+  width: 7.5vh;
+  height: 1.5vh;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2%;
+  /*tablette et écran*/
+}
+@media screen and (min-width: 570px) {
+  .load {
+    width: 12.5vh;
+    height: 2.5vh;
+    margin-top: 0%;
+  }
 }
 .load__dot {
   background-color: #15DEA5;
   height: 100%;
-  width: 3vh;
+  width: 1.5vh;
   border-radius: 15px;
   animation: dot 1000ms backwards infinite;
   animation-direction: alternate;
+  /*tablette et écran*/
+}
+@media screen and (min-width: 570px) {
+  .load__dot {
+    width: 2.5vh;
+  }
 }
 .load__dot--1 {
   animation-delay: 333.3333333333ms;
@@ -278,9 +288,15 @@ footer {
 }
 footer div {
   width: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
+  margin: 2% 0% 2% 0%;
   /*tablette et ecran*/
+  /*tablette et ecran*/
+}
+@media screen and (min-width: 570px) {
+  footer div {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 footer div #btn-mention:hover {
   animation: headshake 100ms;
