@@ -1,0 +1,129 @@
+#parti_menu{
+    font-family: 'Sriracha', cursive;
+    flex-direction: column;
+    background-color: $menu1;
+    color:$cd-menu1;
+    margin: 4% 4% 4% 4%;
+
+    /*tablettes*/
+    @media screen and (min-width:570px) and (max-width:768px) {
+        margin: 4% 4% 4% 4%;
+    }
+
+    /* écrans*/
+    @media screen and (min-width:768px) {
+        margin: auto;
+        margin-top: 4%;
+    }
+
+
+    h1{
+        font-family: 'Devonshire', cursive;
+        font-size: 4rem;
+        font-weight: 100;
+        color: $cd-menu1;
+    }
+    .nom_menu {
+        background-color: $menu1;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+        .fas{
+            padding: 0;
+            font-size: 4rem;
+            /*tablettes*/
+            @media screen and (min-width:570px) and (max-width:768px) {
+            font-size: 5rem;    }
+
+            /* écrans*/
+            @media screen and (min-width:768px) {
+            font-size: 7rem;
+            }
+        }
+        
+}
+
+
+
+.formule{
+    width: 100%;
+    padding: 7% 3% 7% 3%;
+}
+
+/* titre entree plat dessert */
+.categories{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    margin-bottom: 5%;
+    div{
+        width: 80%;
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+/*contenu du menu*/
+
+.detail_menu{
+    width: 100%;
+
+    .ligne{
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+        /*tablettes*/
+        @media screen and (min-width:570px) and (max-width:768px) {
+            display: flex;    
+            justify-content: space-between;
+        } 
+        /*ecran*/
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+         } 
+    }
+
+    .plats{
+        width: 95%;
+        /*tablettes*/
+        @media screen and (min-width:570px) and (max-width:768px) {
+            width: 75%;
+            } 
+    }
+        p{
+            margin-bottom: 3%;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            @media screen and (min-width:570px) {
+            font-size: 1.3rem;             
+            } 
+        }
+
+}
+
+.prix_mobile{
+    display: flex;
+    text-align: right;
+    @media screen and (min-width:570px) {
+        // display: none;
+     }
+}
+
+
+.pointille {
+    display: block;
+    height: 15px;
+    width: 100%;
+    border-bottom: 1px dashed $cd-menu1;
+    @media screen and (min-width:570px) {
+        display: none;
+     }
+ }

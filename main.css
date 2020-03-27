@@ -230,7 +230,6 @@ a {
   width: 1.5vh;
   border-radius: 15px;
   animation: dot 1000ms backwards infinite;
-  animation-direction: alternate;
   /*tablette et écran*/
 }
 @media screen and (min-width: 570px) {
@@ -322,6 +321,138 @@ footer div #btn-contact:hover {
   #content {
     flex-direction: row;
     text-align: left;
+  }
+}
+
+#parti_menu {
+  font-family: "Sriracha", cursive;
+  flex-direction: column;
+  background-color: #fcdfdb;
+  color: #3c1218;
+  margin: 4% 4% 4% 4%;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  #parti_menu {
+    margin: 4% 4% 4% 4%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #parti_menu {
+    margin: auto;
+    margin-top: 4%;
+  }
+}
+#parti_menu h1 {
+  font-family: "Devonshire", cursive;
+  font-size: 4rem;
+  font-weight: 100;
+  color: #3c1218;
+}
+#parti_menu .nom_menu {
+  background-color: #fcdfdb;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+#parti_menu .fas {
+  padding: 0;
+  font-size: 4rem;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  #parti_menu .fas {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #parti_menu .fas {
+    font-size: 7rem;
+  }
+}
+
+.formule {
+  width: 100%;
+  padding: 7% 3% 7% 3%;
+}
+
+/* titre entree plat dessert */
+.categories {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  margin-bottom: 5%;
+}
+.categories div {
+  width: 80%;
+}
+.categories h2 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.categories img {
+  width: 100%;
+}
+
+/*contenu du menu*/
+.detail_menu {
+  width: 100%;
+}
+.detail_menu .ligne {
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+  /*tablettes*/
+  /*ecran*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .detail_menu .ligne {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .detail_menu .ligne {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.detail_menu .plats {
+  width: 95%;
+  /*tablettes*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .detail_menu .plats {
+    width: 75%;
+  }
+}
+.detail_menu p {
+  margin-bottom: 3%;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+@media screen and (min-width: 570px) {
+  .detail_menu p {
+    font-size: 1.3rem;
+  }
+}
+
+.prix_mobile {
+  display: flex;
+  text-align: right;
+}
+.pointille {
+  display: block;
+  height: 15px;
+  width: 100%;
+  border-bottom: 1px dashed #3c1218;
+}
+@media screen and (min-width: 570px) {
+  .pointille {
+    display: none;
   }
 }
 
