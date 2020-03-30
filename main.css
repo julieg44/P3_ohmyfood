@@ -47,12 +47,18 @@ a {
   color: #fdcb46;
 }
 
-.fas {
+.fas.mini-menu {
   font-size: 3.5rem;
   padding-right: 12%;
   background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /*tablette et écran*/
+}
+@media screen and (min-width: 570px) {
+  .fas.mini-menu {
+    padding: 0;
+  }
 }
 
 .grossi {
@@ -230,6 +236,7 @@ a {
   width: 1.5vh;
   border-radius: 15px;
   animation: dot 1000ms backwards infinite;
+  animation-direction: alternate;
   /*tablette et écran*/
 }
 @media screen and (min-width: 570px) {
@@ -329,6 +336,7 @@ footer div #btn-contact:hover {
   flex-direction: column;
   background-color: #fcdfdb;
   color: #3c1218;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin: 4% 4% 4% 4%;
   /*tablettes*/
   /* écrans*/
@@ -344,31 +352,76 @@ footer div #btn-contact:hover {
     margin-top: 4%;
   }
 }
-#parti_menu h1 {
+#parti_menu h2 {
   font-family: "Devonshire", cursive;
   font-size: 4rem;
   font-weight: 100;
   color: #3c1218;
 }
-#parti_menu .nom_menu {
+#parti_menu footer {
+  background-color: #fcdfdb;
+  position: inherit;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5% 0;
+}
+#parti_menu footer h2 {
+  font-size: 3rem;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  #parti_menu footer h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #parti_menu footer h2 {
+    font-size: 4rem;
+  }
+}
+#parti_menu footer .fas {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-right: 4%;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  #parti_menu footer .fas {
+    margin-right: 3%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #parti_menu footer .fas {
+    font-size: 4rem;
+    margin-right: 2%;
+  }
+}
+
+.nom_menu {
   background-color: #fcdfdb;
   text-align: center;
   margin-top: 5%;
   margin-bottom: 2%;
 }
-#parti_menu .fas {
+
+.fas {
   padding: 0;
   font-size: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   /*tablettes*/
   /* écrans*/
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
-  #parti_menu .fas {
+  .fas {
     font-size: 5rem;
   }
 }
 @media screen and (min-width: 768px) {
-  #parti_menu .fas {
+  .fas {
     font-size: 7rem;
   }
 }
@@ -382,16 +435,29 @@ footer div #btn-contact:hover {
 .categories {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-content: center;
   margin-bottom: 5%;
 }
-.categories div {
-  width: 80%;
-}
-.categories h2 {
+.categories h3 {
   text-align: center;
   font-size: 2rem;
   line-height: 2rem;
+  transform: scaleX(1);
+}
+.categories h3:hover::after {
+  transform: scaleX(1);
+}
+.categories h3::after {
+  content: "";
+  display: block;
+  border-bottom: solid 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1000ms ease-in-out;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 0px;
 }
 .categories img {
   width: 100%;
@@ -405,6 +471,8 @@ footer div #btn-contact:hover {
   width: 100%;
   display: block;
   margin-bottom: 40px;
+  padding-left: 4%;
+  padding-right: 4%;
   /*tablettes*/
   /*ecran*/
 }
@@ -421,7 +489,7 @@ footer div #btn-contact:hover {
   }
 }
 .detail_menu .plats {
-  width: 95%;
+  width: 100%;
   /*tablettes*/
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
