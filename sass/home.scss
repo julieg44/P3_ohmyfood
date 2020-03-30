@@ -14,6 +14,9 @@ $cd-gradient-menu4-valeur2:#bfff7e;
 $cd-text:#fdcb46;
 $title:1.5rem;
 $cd-menu1:#3c1218;
+$cd-menu2-a:#c77412;
+$cd-menu2-b:#a56799;
+$cd-menu2-c:#6E4CCC;
 $menu1:#fcdfdb;
 $menu2:#fff5fe;
 $menu3:#f9f9f9;
@@ -22,7 +25,7 @@ $font-size: (menu1:2rem, menu2:1.6rem, menu3:2rem, menu4:2rem);
 
 
 
-header {
+header.generique {
     width: 100%;
     background-color:$cd-primary;
     font-family: 'Roboto', sans-serif;
