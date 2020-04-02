@@ -145,7 +145,7 @@ a {
   padding-top: 3%;
 }
 .menu.menu__three {
-  background-color: #f9f9f9;
+  background-color: #edefef;
 }
 .menu.menu__three h2 {
   font-family: "Dancing Script", cursive;
@@ -358,6 +358,16 @@ footer div #btn-contact:hover {
   color: #c77412;
   background-color: #fff5fe;
 }
+.parti_menu--delice {
+  font-family: "Sriracha", cursive;
+  color: #2c2c2c;
+  background-color: #edefef;
+}
+.parti_menu--palette {
+  font-family: "Sriracha", cursive;
+  color: #2c2c2c;
+  background-color: #fdfffd;
+}
 .parti_menu--note h2 {
   font-family: "Devonshire", cursive;
   font-size: 4rem;
@@ -381,6 +391,44 @@ footer div #btn-contact:hover {
 @media screen and (min-width: 768px) {
   .parti_menu--chic h2 {
     font-size: 3rem;
+  }
+}
+.parti_menu--delice h2 {
+  font-family: "Dancing Script", cursive;
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.3rem;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .parti_menu--delice h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .parti_menu--delice h2 {
+    font-size: 5rem;
+  }
+}
+.parti_menu--palette h2 {
+  font-family: "Kaushan Script", cursive;
+  background: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.3rem;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .parti_menu--palette h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .parti_menu--palette h2 {
+    font-size: 5rem;
   }
 }
 .parti_menu footer {
@@ -480,7 +528,13 @@ footer div #btn-contact:hover {
   align-content: center;
   margin-bottom: 5%;
 }
-.categories .filet_droit {
+.categories--delice .filet_droit {
+  transform: scaleX(-1);
+}
+.categories--chic .filet_droit {
+  transform: rotate(180deg);
+}
+.categories--palette .filet_droit {
   transform: rotate(180deg);
 }
 .categories h3 {
@@ -525,6 +579,26 @@ footer div #btn-contact:hover {
 .categories--chic .filet, .categories .filet_droit {
   display: flex;
   width: 25%;
+}
+.categories--delice .filet, .categories .filet_droit {
+  display: flex;
+  width: 25%;
+}
+.categories--palette .filet, .categories .filet_droit {
+  display: flex;
+  width: 25%;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .categories--palette .filet, .categories .filet_droit {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .categories--palette .filet, .categories .filet_droit {
+    width: 35%;
+  }
 }
 .categories img {
   width: 100%;
@@ -580,6 +654,36 @@ footer div #btn-contact:hover {
     font-size: 1.3rem;
   }
 }
+.detail_menu--delice p {
+  font-size: 1.2rem;
+  /*tablettes*/
+  /*ecran*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .detail_menu--delice p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .detail_menu--delice p {
+    font-size: 1.4rem;
+  }
+}
+.detail_menu--palette p {
+  font-size: 1.2rem;
+  /*tablettes*/
+  /*ecran*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .detail_menu--palette p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .detail_menu--palette p {
+    font-size: 1.4rem;
+  }
+}
 .detail_menu .plats {
   width: 100%;
   /*tablettes*/
@@ -616,6 +720,12 @@ footer div #btn-contact:hover {
 }
 .pointille--chic3 {
   border-bottom: 1px dashed #6E4CCC;
+}
+.pointille--delice {
+  border-bottom: 1px dashed #2c2c2c;
+}
+.pointille--palette {
+  border-bottom: 1px dashed #2c2c2c;
 }
 
 /*# sourceMappingURL=main.css.map */

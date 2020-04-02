@@ -23,6 +23,17 @@
         background-color: $menu2;
     }
 
+    &--delice{
+        font-family: 'Sriracha', cursive;
+        color:$cd-menu-global;
+        background-color: $menu3;
+    }
+
+    &--palette{
+        font-family: 'Sriracha', cursive;
+        color:$cd-menu-global;
+        background-color: $menu4;
+    }
 
     &--note h2{
         font-family: 'Devonshire', cursive;
@@ -46,6 +57,40 @@
             @media screen and (min-width:768px) {
                 font-size: 3rem;
             }
+    }
+
+    &--delice h2{
+        font-family: 'Dancing Script', cursive;
+        background: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu3-valeur1), to($cd-gradient-menu3-valeur2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.3rem;
+        /*tablettes*/
+        @media screen and (min-width:570px) and (max-width:768px) {
+            font-size: 3rem;
+            }
+
+        /* écrans*/
+        @media screen and (min-width:768px) {
+            font-size: 5rem;
+        }
+    }
+
+    &--palette h2{
+        font-family: 'Kaushan Script', cursive;
+        background: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.3rem;
+        /*tablettes*/
+        @media screen and (min-width:570px) and (max-width:768px) {
+            font-size: 3rem;
+            }
+
+        /* écrans*/
+        @media screen and (min-width:768px) {
+            font-size: 5rem;
+        }
     }
 
 
@@ -154,7 +199,15 @@
     align-content: center;
     margin-bottom: 5%;
 
-    .filet_droit{
+    &--delice .filet_droit{
+        transform: scaleX(-1);
+    }
+
+    &--chic .filet_droit{
+        transform: rotate(180deg);
+    }
+
+    &--palette .filet_droit{
         transform: rotate(180deg);
     }
 
@@ -199,6 +252,23 @@
         &--chic .filet,.filet_droit{
             display: flex;
             width: 25%;
+        }
+
+        &--delice .filet,.filet_droit{
+            display: flex;
+            width: 25%;
+        }
+
+        &--palette .filet,.filet_droit{
+            display: flex;
+            width: 25%;
+                /*tablettes*/
+                @media screen and (min-width:570px) and (max-width:768px) {
+                    width: 35%;                }
+        
+                /* écrans*/
+                @media screen and (min-width:768px) {
+                    width: 35%;                }
         }
           
     img{
@@ -255,6 +325,31 @@
         } 
 
     }
+    &--delice p{
+        font-size: 1.2rem;
+        /*tablettes*/
+        @media screen and (min-width:570px) and (max-width:768px) {
+            font-size: 1.3rem;
+        } 
+        /*ecran*/
+        @media screen and (min-width:768px) {
+            font-size: 1.4rem;
+        } 
+
+    }
+
+    &--palette p{
+        font-size: 1.2rem;
+        /*tablettes*/
+        @media screen and (min-width:570px) and (max-width:768px) {
+            font-size: 1.3rem;
+        } 
+        /*ecran*/
+        @media screen and (min-width:768px) {
+            font-size: 1.4rem;
+        } 
+
+    }
 
     .plats{
         width: 100%;
@@ -297,6 +392,14 @@
 
      &--chic3{
         border-bottom: 1px dashed $cd-menu2-c;
+     }
+
+     &--delice{
+        border-bottom: 1px dashed $cd-menu-global;
+     }
+
+     &--palette{
+        border-bottom: 1px dashed $cd-menu-global;
      }
 
 
