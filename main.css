@@ -49,7 +49,7 @@ a {
 
 .fas.mini-menu {
   font-size: 3.5rem;
-  padding-right: 12%;
+  padding-right: 13%;
   background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -331,6 +331,14 @@ footer div #btn-contact:hover {
   }
 }
 
+.intro {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 2rem;
+  margin: 5% 0 3% 0;
+}
+
 .parti_menu {
   font-family: "Sriracha", cursive;
   flex-direction: column;
@@ -370,9 +378,21 @@ footer div #btn-contact:hover {
 }
 .parti_menu--note h2 {
   font-family: "Devonshire", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 100;
   color: #3c1218;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .parti_menu--note h2 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .parti_menu--note h2 {
+    font-size: 4rem;
+  }
 }
 .parti_menu--chic h2 {
   font-family: "Croissant One", cursive;
@@ -457,6 +477,9 @@ footer div #btn-contact:hover {
   font-size: 3rem;
   line-height: 1.5;
   margin-right: 4%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   /*tablettes*/
   /* écrans*/
 }
@@ -576,13 +599,53 @@ footer div #btn-contact:hover {
     font-size: 1.6rem;
   }
 }
+.categories--note .filet, .categories .filet_droit {
+  display: flex;
+  width: 25%;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .categories--note .filet, .categories .filet_droit {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .categories--note .filet, .categories .filet_droit {
+    width: 35%;
+  }
+}
 .categories--chic .filet, .categories .filet_droit {
   display: flex;
   width: 25%;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .categories--chic .filet, .categories .filet_droit {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .categories--chic .filet, .categories .filet_droit {
+    width: 25%;
+  }
 }
 .categories--delice .filet, .categories .filet_droit {
   display: flex;
-  width: 25%;
+  width: 35%;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .categories--delice .filet, .categories .filet_droit {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .categories--delice .filet, .categories .filet_droit {
+    width: 35%;
+  }
 }
 .categories--palette .filet, .categories .filet_droit {
   display: flex;
@@ -592,12 +655,12 @@ footer div #btn-contact:hover {
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
   .categories--palette .filet, .categories .filet_droit {
-    width: 35%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 768px) {
   .categories--palette .filet, .categories .filet_droit {
-    width: 35%;
+    width: 25%;
   }
 }
 .categories img {

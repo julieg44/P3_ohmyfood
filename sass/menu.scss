@@ -1,3 +1,11 @@
+.intro{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: $cd-menu-global;
+    font-size: 2rem;
+    margin: 5% 0 3% 0;
+}
+
 .parti_menu{
     font-family: 'Sriracha', cursive;
     flex-direction: column;
@@ -37,9 +45,18 @@
 
     &--note h2{
         font-family: 'Devonshire', cursive;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 100;
         color: $cd-menu1;
+            /*tablettes*/
+            @media screen and (min-width:570px) and (max-width:768px) {
+                font-size: 3.5rem;
+                }
+    
+            /* écrans*/
+            @media screen and (min-width:768px) {
+                font-size: 4rem;
+            }
     } 
 
     &--chic h2{
@@ -120,6 +137,9 @@
             font-size: 3rem;
             line-height: 1.5;
             margin-right: 4%;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             /*tablettes*/
             @media screen and (min-width:570px) and (max-width:768px) {
             margin-right: 3%;
@@ -249,17 +269,7 @@
                 }
         }
 
-        &--chic .filet,.filet_droit{
-            display: flex;
-            width: 25%;
-        }
-
-        &--delice .filet,.filet_droit{
-            display: flex;
-            width: 25%;
-        }
-
-        &--palette .filet,.filet_droit{
+        &--note .filet,.filet_droit{
             display: flex;
             width: 25%;
                 /*tablettes*/
@@ -269,6 +279,48 @@
                 /* écrans*/
                 @media screen and (min-width:768px) {
                     width: 35%;                }
+        }
+
+        &--chic .filet,.filet_droit{
+            display: flex;
+            width: 25%;
+                /*tablettes*/
+                @media screen and (min-width:570px) and (max-width:768px) {
+                    width: 25%;                
+                }
+        
+                /* écrans*/
+                @media screen and (min-width:768px) {
+                    width: 25%;               
+                }
+        }
+
+        &--delice .filet,.filet_droit{
+            display: flex;
+            width: 35%;
+                /*tablettes*/
+                @media screen and (min-width:570px) and (max-width:768px) {
+                    width: 35%;                
+                }
+        
+                /* écrans*/
+                @media screen and (min-width:768px) {
+                    width: 35%;               
+                }
+        }
+
+        &--palette .filet,.filet_droit{
+            display: flex;
+            width: 25%;
+                /*tablettes*/
+                @media screen and (min-width:570px) and (max-width:768px) {
+                    width: 25%;                
+                }
+        
+                /* écrans*/
+                @media screen and (min-width:768px) {
+                    width: 25%;               
+                }
         }
           
     img{
