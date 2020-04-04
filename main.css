@@ -399,6 +399,8 @@ footer div #btn-contact:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   font-size: 2.3rem;
   /*tablettes*/
   /* écrans*/
@@ -599,67 +601,67 @@ footer div #btn-contact:hover {
     font-size: 1.6rem;
   }
 }
-.categories--note .filet, .categories .filet_droit {
+.categories--note .filet, .categories--note .filet_droit {
   display: flex;
   width: 25%;
   /*tablettes*/
   /* écrans*/
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
-  .categories--note .filet, .categories .filet_droit {
+  .categories--note .filet, .categories--note .filet_droit {
     width: 35%;
   }
 }
 @media screen and (min-width: 768px) {
-  .categories--note .filet, .categories .filet_droit {
+  .categories--note .filet, .categories--note .filet_droit {
     width: 35%;
   }
 }
-.categories--chic .filet, .categories .filet_droit {
+.categories--chic .filet, .categories--chic .filet_droit {
   display: flex;
   width: 25%;
   /*tablettes*/
   /* écrans*/
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
-  .categories--chic .filet, .categories .filet_droit {
+  .categories--chic .filet, .categories--chic .filet_droit {
     width: 25%;
   }
 }
 @media screen and (min-width: 768px) {
-  .categories--chic .filet, .categories .filet_droit {
+  .categories--chic .filet, .categories--chic .filet_droit {
     width: 25%;
   }
 }
-.categories--delice .filet, .categories .filet_droit {
+.categories--delice .filet, .categories--delice .filet_droit {
   display: flex;
   width: 35%;
   /*tablettes*/
   /* écrans*/
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
-  .categories--delice .filet, .categories .filet_droit {
+  .categories--delice .filet, .categories--delice .filet_droit {
     width: 35%;
   }
 }
 @media screen and (min-width: 768px) {
-  .categories--delice .filet, .categories .filet_droit {
+  .categories--delice .filet, .categories--delice .filet_droit {
     width: 35%;
   }
 }
-.categories--palette .filet, .categories .filet_droit {
+.categories--palette .filet, .categories--palette .filet_droit {
   display: flex;
   width: 25%;
   /*tablettes*/
   /* écrans*/
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
-  .categories--palette .filet, .categories .filet_droit {
+  .categories--palette .filet, .categories--palette .filet_droit {
     width: 25%;
   }
 }
 @media screen and (min-width: 768px) {
-  .categories--palette .filet, .categories .filet_droit {
+  .categories--palette .filet, .categories--palette .filet_droit {
     width: 25%;
   }
 }

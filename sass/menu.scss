@@ -64,6 +64,8 @@
         background: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu2-valeur1), to($cd-gradient-menu2-valeur2));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
         font-size: 2.3rem;
             /*tablettes*/
             @media screen and (min-width:570px) and (max-width:768px) {
@@ -269,7 +271,8 @@
                 }
         }
 
-        &--note .filet,.filet_droit{
+        &--note .filet,
+        &--note .filet_droit{
             display: flex;
             width: 25%;
                 /*tablettes*/
@@ -281,7 +284,9 @@
                     width: 35%;                }
         }
 
-        &--chic .filet,.filet_droit{
+
+        &--chic .filet,
+        &--chic .filet_droit{
             display: flex;
             width: 25%;
                 /*tablettes*/
@@ -295,7 +300,8 @@
                 }
         }
 
-        &--delice .filet,.filet_droit{
+        &--delice .filet,
+        &--delice .filet_droit{
             display: flex;
             width: 35%;
                 /*tablettes*/
@@ -309,7 +315,8 @@
                 }
         }
 
-        &--palette .filet,.filet_droit{
+        &--palette .filet,
+        &--palette .filet_droit{
             display: flex;
             width: 25%;
                 /*tablettes*/
@@ -456,3 +463,5 @@
 
 
  }
+
+
