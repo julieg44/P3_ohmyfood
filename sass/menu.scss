@@ -235,7 +235,7 @@
 
     h3{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 2rem;
         transform: scaleX(1);
             &:hover::after {
@@ -255,7 +255,15 @@
           }
         
         &--note h3{
-            font-size: 2rem;
+            font-size: 1.6rem;
+                /*tablettes*/
+                @media screen and (min-width:570px) and (max-width:768px) {
+                    font-size: 1.8rem;    }
+        
+                /* écrans*/
+                @media screen and (min-width:768px) {
+                font-size: 2rem;
+                }
         }  
 
         &--chic h3{
@@ -268,6 +276,40 @@
                 /* écrans*/
                 @media screen and (min-width:768px) {
                 font-size: 1.6rem;
+                }
+        }
+
+        &--delice h3{
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+                /*tablettes*/
+                @media screen and (min-width:570px) and (max-width:768px) {
+                    font-size: 1.6rem; 
+                    line-height: 2rem;
+                }
+        
+                /* écrans*/
+                @media screen and (min-width:768px) {
+                font-size: 2rem;
+                line-height: 2rem;
+
+                }
+        }
+
+        &--palette h3{
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+                /*tablettes*/
+                @media screen and (min-width:570px) and (max-width:768px) {
+                    font-size: 1.6rem; 
+                    line-height: 2rem;
+                }
+        
+                /* écrans*/
+                @media screen and (min-width:768px) {
+                font-size: 2rem;
+                line-height: 2rem;
+
                 }
         }
 
@@ -311,7 +353,7 @@
         
                 /* écrans*/
                 @media screen and (min-width:768px) {
-                    width: 35%;               
+                    width: 30%;               
                 }
         }
 
@@ -424,6 +466,7 @@
 .prix_mobile{
     display: flex;
     text-align: right;
+    align-items: center;
     @media screen and (min-width:570px) {
         // display: none;
      }

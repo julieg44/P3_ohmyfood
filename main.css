@@ -278,7 +278,7 @@ footer {
   bottom: 0;
   margin-top: 5%;
   width: 100%;
-  height: 10%;
+  height: 15%;
   background-color: #579c87;
   color: #fdcb46;
   display: flex;
@@ -564,7 +564,7 @@ footer div #btn-contact:hover {
 }
 .categories h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 2rem;
   transform: scaleX(1);
 }
@@ -583,7 +583,19 @@ footer div #btn-contact:hover {
   margin-bottom: 0px;
 }
 .categories--note h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .categories--note h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .categories--note h3 {
+    font-size: 2rem;
+  }
 }
 .categories--chic h3 {
   font-size: 1.3rem;
@@ -599,6 +611,42 @@ footer div #btn-contact:hover {
 @media screen and (min-width: 768px) {
   .categories--chic h3 {
     font-size: 1.6rem;
+  }
+}
+.categories--delice h3 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .categories--delice h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .categories--delice h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+.categories--palette h3 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  /*tablettes*/
+  /* écrans*/
+}
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .categories--palette h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .categories--palette h3 {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 .categories--note .filet, .categories--note .filet_droit {
@@ -646,7 +694,7 @@ footer div #btn-contact:hover {
 }
 @media screen and (min-width: 768px) {
   .categories--delice .filet, .categories--delice .filet_droit {
-    width: 35%;
+    width: 30%;
   }
 }
 .categories--palette .filet, .categories--palette .filet_droit {
@@ -762,6 +810,7 @@ footer div #btn-contact:hover {
 .prix_mobile {
   display: flex;
   text-align: right;
+  align-items: center;
 }
 .pointille {
   display: block;
