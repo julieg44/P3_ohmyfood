@@ -1,65 +1,65 @@
-.intro{
+.intro {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: $cd-menu-global;
     font-size: 2rem;
     margin: 5% 0 3% 0;
 }
-
-.parti_menu{
-    font-family: 'Sriracha', cursive;
+/*mise en forme generale du menu*/
+.parti_menu {
     flex-direction: column;
-    background-color: $menu1;
-    color:$cd-menu1;
     box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.2);
     margin: 4% 4% 4% 4%;
 
 
-    /*tablettes*/
-    @media screen and (min-width:570px) and (max-width:768px) {
+    @include tablette_ecran {
         margin: 4% 4% 4% 4%;
     }
 
-    /* écrans*/
-    @media screen and (min-width:768px) {
+    @include ecran {
         margin: auto;
         margin-top: 4%;
     }
-    &--chic{
+    &--note{
+        font-family: 'Sriracha', cursive;
+        background-color: $menu1;
+        color: $cd-menu1;
+    }
+
+    &--chic {
         font-family: 'Noto serif', cursive;
-        color:$cd-gradient-menu2-valeur1;
+        color: $cd-gradient-menu2-valeur1;
         background-color: $menu2;
     }
 
-    &--delice{
+    &--delice {
         font-family: 'Sriracha', cursive;
-        color:$cd-menu-global;
+        color: $cd-menu-global;
         background-color: $menu3;
     }
 
-    &--palette{
+    &--palette {
         font-family: 'Sriracha', cursive;
-        color:$cd-menu-global;
+        color: $cd-menu-global;
         background-color: $menu4;
     }
 
-    &--note h2{
+    &--note h2 {
         font-family: 'Devonshire', cursive;
         font-size: 3rem;
         font-weight: 100;
         color: $cd-menu1;
-            /*tablettes*/
-            @media screen and (min-width:570px) and (max-width:768px) {
-                font-size: 3.5rem;
-                }
-    
-            /* écrans*/
-            @media screen and (min-width:768px) {
-                font-size: 4rem;
-            }
-    } 
 
-    &--chic h2{
+        @include tablette {
+            font-size: 3.5rem;
+        }
+
+        @include ecran {
+            font-size: 4rem;
+        }
+    }
+
+    &--chic h2 {
         font-family: 'Croissant One', cursive;
         background: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu2-valeur1), to($cd-gradient-menu2-valeur2));
         -webkit-background-clip: text;
@@ -67,47 +67,44 @@
         background-clip: text;
         text-fill-color: transparent;
         font-size: 2.3rem;
-            /*tablettes*/
-            @media screen and (min-width:570px) and (max-width:768px) {
-                font-size: 2.5rem;
-                }
-    
-            /* écrans*/
-            @media screen and (min-width:768px) {
-                font-size: 3rem;
-            }
+
+        @include tablette {
+            font-size: 2.5rem;
+        }
+
+        @include ecran {
+            font-size: 3rem;
+        }
     }
 
-    &--delice h2{
+    &--delice h2 {
         font-family: 'Dancing Script', cursive;
         background: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu3-valeur1), to($cd-gradient-menu3-valeur2));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 2.3rem;
-        /*tablettes*/
-        @media screen and (min-width:570px) and (max-width:768px) {
-            font-size: 3rem;
-            }
 
-        /* écrans*/
-        @media screen and (min-width:768px) {
+        @include tablette {
+            font-size: 3rem;
+        }
+
+        @include ecran {
             font-size: 5rem;
         }
     }
 
-    &--palette h2{
+    &--palette h2 {
         font-family: 'Kaushan Script', cursive;
         background: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 2.3rem;
-        /*tablettes*/
-        @media screen and (min-width:570px) and (max-width:768px) {
-            font-size: 3rem;
-            }
 
-        /* écrans*/
-        @media screen and (min-width:768px) {
+        @include tablette {
+            font-size: 3rem;
+        }
+
+        @include ecran {
             font-size: 5rem;
         }
     }
@@ -115,396 +112,367 @@
 
 
 
-    /*gestion footer*/
-    
-    footer{
-        background-color:$menu1 ;
+    /*gestion footer menu note enchantée*/
+
+    footer {
+        background-color: $menu1;
         position: inherit;
         justify-content: center;
         align-items: center;
-        margin: 0 0 5% 0; 
-        h2{
+        margin: 0 0 5% 0;
+
+        h2 {
             font-size: 3rem;
-            /*tablettes*/
-            @media screen and (min-width:570px) and (max-width:768px) {
-            font-size: 3rem;
+
+            @include tablette {
+                font-size: 3rem;
             }
 
-            /* écrans*/
-            @media screen and (min-width:768px) {
-            font-size: 4rem;
+            @include ecran {
+                font-size: 4rem;
             }
         }
-        .fas{
+
+        .fas {
             font-size: 3rem;
             line-height: 1.5;
             margin-right: 4%;
             background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            /*tablettes*/
-            @media screen and (min-width:570px) and (max-width:768px) {
-            margin-right: 3%;
 
+            @include tablette {
+                margin-right: 3%;
             }
 
-            /* écrans*/
-            @media screen and (min-width:768px) {
-            font-size: 4rem;
-            margin-right: 2%;
-
+            @include ecran {
+                font-size: 4rem;
+                margin-right: 2%;
             }
-        }   
+        }
     }
- }
+}
 
 
 
-    .nom_menu {
-        text-align: center;
+.nom_menu {
+    text-align: center;
+
+    &--note {
         margin-top: 5%;
         margin-bottom: 2%;
-        &--note{
-            margin-top: 5%;
-            margin-bottom: 2%;
+    }
+
+    &--chic {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    &--delice,
+    &--palette{
+        margin-top: 9%;
+        margin-bottom: 5%;
+    }
+
+
+    /*note de musique*/
+    .fas {
+        padding: 0;
+        font-size: 4rem;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include tablette {
+            font-size: 5rem;
         }
 
-        &--chic{
-            margin-top:10%;
-            margin-bottom: 5%;
-        }
-
-        /*note de musique*/
-        .fas{
-            padding: 0;
-            font-size: 4rem;
-            background: -webkit-gradient(linear, left top, left bottom, from(#f04a5e), to(#f78f6a));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            /*tablettes*/
-            @media screen and (min-width:570px) and (max-width:768px) {
-            font-size: 5rem;    }
-
-            /* écrans*/
-            @media screen and (min-width:768px) {
+        @include ecran {
             font-size: 7rem;
-            }
         }
-    }   
-        
+    }
+}
 
 
 
 
-.formule{
+
+.formule {
     width: 100%;
     padding: 7% 3% 3% 3%;
-    
-    &--entree{
+    /* gestion des 3 paragraphes avec 3 couleurs différentes du menu chic à la francaise*/
+    &--entree {
         color: $cd-menu2-a;
     }
 
-    &--plats{
+    &--plats {
         color: $cd-menu2-b;
     }
 
-    &--dessert{
+    &--dessert {
         color: $cd-menu2-c;
     }
 }
 
-/* titre entree plat dessert */
-.categories{
+/* titre entree - plat - dessert */
+.categories {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin-bottom: 5%;
 
-    &--delice .filet_droit{
+    &--delice .filet_droit {
         transform: scaleX(-1);
     }
 
-    &--chic .filet_droit{
+    &--chic .filet_droit {
         transform: rotate(180deg);
     }
 
-    &--palette .filet_droit{
+    &--palette .filet_droit {
         transform: rotate(180deg);
     }
 
-    h3{
+    h3 {
         text-align: center;
         font-size: 1.6rem;
         line-height: 2rem;
         transform: scaleX(1);
-            &:hover::after {
-              transform: scaleX(1);  
-            }
-              &::after{
-                content: "";
-                display: block;
-                border-bottom: solid 3px;
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: transform 1000ms ease-in-out;
-                width: 100%;
-                height: 3px;
-                margin-bottom: 0px;
-              }
-          }
-        
-        &--note h3{
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: solid 3px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 1000ms ease-in-out;
+            width: 100%;
+            height: 3px;
+            margin-bottom: 0px;
+        }
+    }
+
+    &--note h3 {
+        font-size: 1.6rem;
+
+        @include tablette {
+            font-size: 1.8rem;
+        }
+
+        @include ecran {
+            font-size: 2rem;
+        }
+    }
+
+    &--chic h3 {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+
+        @include tablette {
+            font-size: 1.4rem;
+        }
+
+        @include ecran {
             font-size: 1.6rem;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    font-size: 1.8rem;    }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                font-size: 2rem;
-                }
-        }  
+        }
+    }
 
-        &--chic h3{
-            font-size: 1.3rem;
-            line-height: 1.3rem;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    font-size: 1.4rem;    }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                font-size: 1.6rem;
-                }
+    &--delice h3 {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+
+        @include tablette {
+            font-size: 1.6rem;
+            line-height: 2rem;
         }
 
-        &--delice h3{
-            font-size: 1.3rem;
-            line-height: 1.3rem;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    font-size: 1.6rem; 
-                    line-height: 2rem;
-                }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                font-size: 2rem;
-                line-height: 2rem;
+        @include ecran {
+            font-size: 2rem;
+            line-height: 2rem;
 
-                }
+        }
+    }
+
+    &--palette h3 {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+
+        @include tablette {
+            font-size: 1.6rem;
+            line-height: 2rem;
         }
 
-        &--palette h3{
-            font-size: 1.3rem;
-            line-height: 1.3rem;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    font-size: 1.6rem; 
-                    line-height: 2rem;
-                }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                font-size: 2rem;
-                line-height: 2rem;
+        @include ecran {
+            font-size: 2rem;
+            line-height: 2rem;
 
-                }
         }
+    }
 
-        &--note .filet,
-        &--note .filet_droit{
-            display: flex;
-            width: 25%;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    width: 35%;                }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                    width: 35%;                }
-        }
+    &--note .filet,
+    &--note .filet_droit {
+        display: flex;
+        width: 25%;
 
-
-        &--chic .filet,
-        &--chic .filet_droit{
-            display: flex;
-            width: 25%;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    width: 25%;                
-                }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                    width: 25%;               
-                }
-        }
-
-        &--delice .filet,
-        &--delice .filet_droit{
-            display: flex;
+        @include tablette_ecran {
             width: 35%;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    width: 35%;                
-                }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                    width: 30%;               
-                }
         }
+    }
 
-        &--palette .filet,
-        &--palette .filet_droit{
-            display: flex;
-            width: 25%;
-                /*tablettes*/
-                @media screen and (min-width:570px) and (max-width:768px) {
-                    width: 25%;                
-                }
-        
-                /* écrans*/
-                @media screen and (min-width:768px) {
-                    width: 25%;               
-                }
+
+    &--chic .filet,
+    &--chic .filet_droit {
+        display: flex;
+        width: 25%;
+    }
+
+    &--delice .filet,
+    &--delice .filet_droit {
+        display: flex;
+        width: 35%;
+
+        @include tablette_ecran {
+            width: 30%;
         }
-          
-    img{
+    }
+
+    &--palette .filet,
+    &--palette .filet_droit {
+        display: flex;
+        width: 25%;
+
+        @include tablette_ecran {
+            width: 30%;
+        }
+    }
+
+    img {
         width: 100%;
-    } 
+    }
 }
-
-
-
-
-
 
 /*contenu du menu*/
 
-.detail_menu{
+.detail_menu {
     width: 100%;
 
-    .ligne{
+    .ligne {
         width: 100%;
         display: block;
         margin-bottom: 40px;
         padding-left: 4%;
         padding-right: 4%;
-        /*tablettes*/
-        @media screen and (min-width:570px) and (max-width:768px) {
-            display: flex;    
-            justify-content: space-between;
-        } 
-        /*ecran*/
-        @media screen and (min-width:768px) {
+
+        @include tablette_ecran {
             display: flex;
             justify-content: space-between;
-         } 
+        }
     }
 
-    &--note p{
+    &--note p {
         margin-bottom: 3%;
         font-size: 1.2rem;
         line-height: 1.2rem;
-        @media screen and (min-width:570px) {
-        font-size: 1.3rem;             
-        } 
+
+        @include tablette_ecran {
+            font-size: 1.3rem;
+        }
     }
 
-    &--chic p{
+    &--chic p {
         font-size: 1rem;
-        /*tablettes*/
-        @media screen and (min-width:570px) and (max-width:768px) {
+
+        @include tablette {
             font-size: 1.2rem;
-        } 
-        /*ecran*/
-        @media screen and (min-width:768px) {
+        }
+
+        @include ecran {
             font-size: 1.3rem;
-        } 
+        }
 
     }
-    &--delice p{
+
+    &--delice p {
         font-size: 1.2rem;
-        /*tablettes*/
-        @media screen and (min-width:570px) and (max-width:768px) {
+
+        @include tablette {
             font-size: 1.3rem;
-        } 
-        /*ecran*/
-        @media screen and (min-width:768px) {
+        }
+
+        @include ecran {
             font-size: 1.4rem;
-        } 
+        }
 
     }
 
-    &--palette p{
+    &--palette p {
         font-size: 1.2rem;
-        /*tablettes*/
-        @media screen and (min-width:570px) and (max-width:768px) {
+
+        @include tablette {
             font-size: 1.3rem;
-        } 
-        /*ecran*/
-        @media screen and (min-width:768px) {
+        }
+
+        @include ecran {
             font-size: 1.4rem;
-        } 
+        }
 
     }
 
-    .plats{
+    .plats {
         width: 100%;
-        /*tablettes*/
-        @media screen and (min-width:570px) and (max-width:768px) {
+
+        @include tablette {
             width: 75%;
-            } 
+        }
     }
 
 
 }
 
-.prix_mobile{
+.prix_mobile {
     display: flex;
     text-align: right;
     align-items: center;
-    @media screen and (min-width:570px) {
-        // display: none;
-     }
 }
 
-
+/* pointillés visibles uniquement en version mobile */
 .pointille {
     display: block;
     height: 15px;
     width: 100%;
-    @media screen and (min-width:570px) {
+
+    @include tablette_ecran {
         display: none;
-     }
-     &--note{
+    }
+
+    &--note {
         border-bottom: 1px dashed $cd-menu1;
-     }
-     /*gestion des 3 differentes couleurs de paragraphe du menu Chic*/
-     &--chic1{
+    }
+
+    /*gestion des 3 differentes couleurs de paragraphe du menu Chic*/
+    &--chic1 {
         border-bottom: 1px dashed $cd-menu2-a;
-     }
+    }
 
-     &--chic2{
+    &--chic2 {
         border-bottom: 1px dashed $cd-menu2-b;
-     }
+    }
 
-     &--chic3{
-        border-bottom: 1px dashed $cd-menu2-c;
-     }
+    // &--chic3 {
+    //     border-bottom: 1px dashed $cd-menu2-c;
+    // }
 
-     &--delice{
+    &--delice {
         border-bottom: 1px dashed $cd-menu-global;
-     }
+    }
 
-     &--palette{
+    &--palette {
         border-bottom: 1px dashed $cd-menu-global;
-     }
+    }
 
-
- }
-
-
+}

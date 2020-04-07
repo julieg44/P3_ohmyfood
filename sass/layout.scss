@@ -1,0 +1,83 @@
+/*header*/
+
+header.generique {
+    width: 100%;
+    background-color:$cd-primary;
+    font-family: 'Roboto', sans-serif;
+    color: $cd-text;
+    text-align: center;
+    font-size: $title;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+/* mise en forme du footer*/
+
+/*animation*/
+
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+
+    75% {
+        // entièrement à gauche
+        transform: translateX(-$shake-intensity);
+    }
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    margin-top: 5%;
+    width: 100%;
+    height: 15%;
+    background-color: $cd-primary;
+    color: $cd-text;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+
+    @include tablette_ecran {
+        height: 6%;
+    }
+
+    & div {
+        width: 100%;
+        margin: 2% 0% 2% 0%;
+        @include tablette_ecran {
+        padding-left: 2%;
+        padding-right: 2%;    
+        }
+
+        & #btn-mention:hover {
+            animation: headshake 100ms;
+        }
+
+        & #btn-contact:hover {
+            animation: headshake 100ms;
+        }
+
+        @include tablette_ecran {
+            & #btn-contact {
+                text-align: right;
+            }
+        }
+    }
+}
+
+#content {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include tablette_ecran {
+        flex-direction: row;
+        text-align: left;
+    }
+}
