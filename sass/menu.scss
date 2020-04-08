@@ -222,16 +222,11 @@
     align-content: center;
     margin-bottom: 5%;
 
-    &--delice .filet_droit {
-        transform: scaleX(-1);
-    }
-
-    &--chic .filet_droit {
-        transform: rotate(180deg);
-    }
-
+    &--note .filet_droit,
+    &--delice .filet_droit,
+    &--chic .filet_droit,
     &--palette .filet_droit {
-        transform: rotate(180deg);
+        transform: scaleX(-1);
     }
 
     h3 {
@@ -313,26 +308,58 @@
 
         }
     }
-
+    /* inclusion du filet menu Note enchantée*/
     &--note .filet,
     &--note .filet_droit {
+        background-color:$cd-menu1;
+        -webkit-mask: url(/images/filet1.svg) no-repeat center;
+        mask: url(/images/filet1.svg) no-repeat center;
         display: flex;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
         width: 25%;
 
         @include tablette_ecran {
             width: 35%;
         }
     }
-
+    
+    /* inclusion du filet menu Chic à la française*/
 
     &--chic .filet,
     &--chic .filet_droit {
+        -webkit-mask: url(/images/filet2.svg) no-repeat center;
+        mask: url(/images/filet2.svg) no-repeat center;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
         display: flex;
         width: 25%;
     }
 
+    &--chic .filet1,
+    &--chic .filet_droit1{
+        background-color:$cd-menu2-a;
+    }
+
+    &--chic .filet2,
+    &--chic .filet_droit2{
+        background-color:$cd-menu2-b;
+    }
+
+    &--chic .filet3,
+    &--chic .filet_droit3{
+        background-color:$cd-menu2-c;
+    }
+
+     /* inclusion du filet menu Delice des papilles*/
+
+
     &--delice .filet,
     &--delice .filet_droit {
+        -webkit-mask: url(/images/filet3.svg) no-repeat center;
+        mask: url(/images/filet3.svg) no-repeat center;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;        
         display: flex;
         width: 35%;
 
@@ -341,19 +368,43 @@
         }
     }
 
+    &--delice .filet1,
+    &--delice .filet_droit1{
+        background-color:$cd-menu3-a;
+    }
+
+    &--delice .filet2,
+    &--delice .filet_droit2{
+        background-color:$cd-menu3-b;
+    }
+
+    &--delice .filet3,
+    &--delice .filet_droit3{
+        background-color:$cd-menu3-c;
+    }
+
+     /* inclusion du filet menu Palette du gout */
+
     &--palette .filet,
     &--palette .filet_droit {
+        background-color: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
+        background:linear-gradient(left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
+        -webkit-mask: url(/images/filet4.svg) no-repeat center;
+        mask: url(/images/filet4.svg) no-repeat center;
         display: flex;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
         width: 25%;
+        background-color: $cd-gradient-menu4-valeur2;
 
         @include tablette_ecran {
             width: 30%;
         }
     }
 
-    img {
-        width: 100%;
-    }
+    // img {
+    //     width: 100%;
+    // }
 }
 
 /*contenu du menu*/

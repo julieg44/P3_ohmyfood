@@ -529,15 +529,13 @@ a {
   justify-content: space-between;
   align-content: center;
   margin-bottom: 5%;
+  /* inclusion du filet menu Note enchantée*/
+  /* inclusion du filet menu Chic à la française*/
+  /* inclusion du filet menu Delice des papilles*/
+  /* inclusion du filet menu Palette du gout */
 }
-.categories--delice .filet_droit {
+.categories--note .filet_droit, .categories--delice .filet_droit, .categories--chic .filet_droit, .categories--palette .filet_droit {
   transform: scaleX(-1);
-}
-.categories--chic .filet_droit {
-  transform: rotate(180deg);
-}
-.categories--palette .filet_droit {
-  transform: rotate(180deg);
 }
 .categories h3 {
   text-align: center;
@@ -619,7 +617,12 @@ a {
   }
 }
 .categories--note .filet, .categories--note .filet_droit {
+  background-color: #3c1218;
+  -webkit-mask: url(/images/filet1.svg) no-repeat center;
+  mask: url(/images/filet1.svg) no-repeat center;
   display: flex;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
   width: 25%;
 }
 @media screen and (min-width: 570px) {
@@ -628,10 +631,27 @@ a {
   }
 }
 .categories--chic .filet, .categories--chic .filet_droit {
+  -webkit-mask: url(/images/filet2.svg) no-repeat center;
+  mask: url(/images/filet2.svg) no-repeat center;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
   display: flex;
   width: 25%;
 }
+.categories--chic .filet1, .categories--chic .filet_droit1 {
+  background-color: #c77412;
+}
+.categories--chic .filet2, .categories--chic .filet_droit2 {
+  background-color: #a56799;
+}
+.categories--chic .filet3, .categories--chic .filet_droit3 {
+  background-color: #6E4CCC;
+}
 .categories--delice .filet, .categories--delice .filet_droit {
+  -webkit-mask: url(/images/filet3.svg) no-repeat center;
+  mask: url(/images/filet3.svg) no-repeat center;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
   display: flex;
   width: 35%;
 }
@@ -640,17 +660,30 @@ a {
     width: 30%;
   }
 }
+.categories--delice .filet1, .categories--delice .filet_droit1 {
+  background-color: #0228dd;
+}
+.categories--delice .filet2, .categories--delice .filet_droit2 {
+  background-color: #0670f3;
+}
+.categories--delice .filet3, .categories--delice .filet_droit3 {
+  background-color: #229df9;
+}
 .categories--palette .filet, .categories--palette .filet_droit {
+  background-color: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
+  background: linear-gradient(left top, right bottom, from(#3d9339), to(#bfff7e));
+  -webkit-mask: url(/images/filet4.svg) no-repeat center;
+  mask: url(/images/filet4.svg) no-repeat center;
   display: flex;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
   width: 25%;
+  background-color: #bfff7e;
 }
 @media screen and (min-width: 570px) {
   .categories--palette .filet, .categories--palette .filet_droit {
     width: 30%;
   }
-}
-.categories img {
-  width: 100%;
 }
 
 /*contenu du menu*/
