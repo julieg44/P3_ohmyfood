@@ -618,8 +618,8 @@ a {
 }
 .categories--note .filet, .categories--note .filet_droit {
   background-color: #3c1218;
-  -webkit-mask: url(/images/filet1.svg) no-repeat center;
-  mask: url(/images/filet1.svg) no-repeat center;
+  -webkit-mask: url(./images/filet1.svg) no-repeat center;
+  mask: url(./images/filet1.svg) no-repeat center;
   display: flex;
   -webkit-mask-size: 100%;
   mask-size: 100%;
@@ -631,8 +631,8 @@ a {
   }
 }
 .categories--chic .filet, .categories--chic .filet_droit {
-  -webkit-mask: url(/images/filet2.svg) no-repeat center;
-  mask: url(/images/filet2.svg) no-repeat center;
+  -webkit-mask: url(./images/filet2.svg) no-repeat center;
+  mask: url(./images/filet2.svg) no-repeat center;
   -webkit-mask-size: 100%;
   mask-size: 100%;
   display: flex;
@@ -648,8 +648,8 @@ a {
   background-color: #6E4CCC;
 }
 .categories--delice .filet, .categories--delice .filet_droit {
-  -webkit-mask: url(/images/filet3.svg) no-repeat center;
-  mask: url(/images/filet3.svg) no-repeat center;
+  -webkit-mask: url(./images/filet3.svg) no-repeat center;
+  mask: url(./images/filet3.svg) no-repeat center;
   -webkit-mask-size: 100%;
   mask-size: 100%;
   display: flex;
@@ -672,8 +672,8 @@ a {
 .categories--palette .filet, .categories--palette .filet_droit {
   background-color: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
   background: linear-gradient(left top, right bottom, from(#3d9339), to(#bfff7e));
-  -webkit-mask: url(/images/filet4.svg) no-repeat center;
-  mask: url(/images/filet4.svg) no-repeat center;
+  -webkit-mask: url(./images/filet4.svg) no-repeat center;
+  mask: url(./images/filet4.svg) no-repeat center;
   display: flex;
   -webkit-mask-size: 100%;
   mask-size: 100%;

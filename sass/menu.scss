@@ -312,8 +312,8 @@
     &--note .filet,
     &--note .filet_droit {
         background-color:$cd-menu1;
-        -webkit-mask: url(/images/filet1.svg) no-repeat center;
-        mask: url(/images/filet1.svg) no-repeat center;
+        -webkit-mask: url(./images/filet1.svg) no-repeat center;
+        mask: url(./images/filet1.svg) no-repeat center;
         display: flex;
         -webkit-mask-size: 100%;
         mask-size: 100%;
@@ -328,8 +328,8 @@
 
     &--chic .filet,
     &--chic .filet_droit {
-        -webkit-mask: url(/images/filet2.svg) no-repeat center;
-        mask: url(/images/filet2.svg) no-repeat center;
+        -webkit-mask: url(./images/filet2.svg) no-repeat center;
+        mask: url(./images/filet2.svg) no-repeat center;
         -webkit-mask-size: 100%;
         mask-size: 100%;
         display: flex;
@@ -356,8 +356,8 @@
 
     &--delice .filet,
     &--delice .filet_droit {
-        -webkit-mask: url(/images/filet3.svg) no-repeat center;
-        mask: url(/images/filet3.svg) no-repeat center;
+        -webkit-mask: url(./images/filet3.svg) no-repeat center;
+        mask: url(./images/filet3.svg) no-repeat center;
         -webkit-mask-size: 100%;
         mask-size: 100%;        
         display: flex;
@@ -389,8 +389,8 @@
     &--palette .filet_droit {
         background-color: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
         background:linear-gradient(left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
-        -webkit-mask: url(/images/filet4.svg) no-repeat center;
-        mask: url(/images/filet4.svg) no-repeat center;
+        -webkit-mask: url(./images/filet4.svg) no-repeat center;
+        mask: url(./images/filet4.svg) no-repeat center;
         display: flex;
         -webkit-mask-size: 100%;
         mask-size: 100%;
