@@ -81,13 +81,13 @@ footer div #btn-contact:hover {
 }
 
 /* mise en forme du contenu*/
-section {
+.contener_home {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (min-width: 570px) and (max-width: 768px) {
-  section {
+  .contener_home {
     margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@ section {
   }
 }
 @media screen and (min-width: 768px) {
-  section {
+  .contener_home {
     max-width: 980px;
     margin: auto;
     flex-direction: row;
@@ -318,6 +318,12 @@ a {
     transform-origin: center;
   }
 }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .intro {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -342,6 +348,7 @@ a {
   .parti_menu {
     margin: auto;
     margin-top: 4%;
+    max-width: 980px;
   }
 }
 .parti_menu--note {
@@ -618,11 +625,15 @@ a {
 }
 .categories--note .filet, .categories--note .filet_droit {
   background-color: #3c1218;
-  -webkit-mask: url(/P3_ohmyfood/images/filet1.svg) no-repeat center;
-  mask: url(/P3_ohmyfood/images/filet1.svg) no-repeat center;
+  -webkit-mask: url(./images/filet1.svg);
+  mask: url(./images/filet1.svg);
   display: flex;
   -webkit-mask-size: 100%;
   mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   width: 25%;
 }
 @media screen and (min-width: 570px) {
@@ -631,10 +642,14 @@ a {
   }
 }
 .categories--chic .filet, .categories--chic .filet_droit {
-  -webkit-mask: url(/P3_ohmyfood/images/filet2.svg) no-repeat center;
-  mask: url(/P3_ohmyfood/images/filet2.svg) no-repeat center;
+  -webkit-mask: url(./images/filet2.svg);
+  mask: url(./images/filet2.svg);
   -webkit-mask-size: 100%;
   mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   display: flex;
   width: 25%;
 }
@@ -648,10 +663,14 @@ a {
   background-color: #6E4CCC;
 }
 .categories--delice .filet, .categories--delice .filet_droit {
-  -webkit-mask: url(/P3_ohmyfood/images/filet3.svg) no-repeat center;
-  mask: url(/P3_ohmyfood/images/filet3.svg) no-repeat center;
+  -webkit-mask: url(./images/filet3.svg);
+  mask: url(./images/filet3.svg);
   -webkit-mask-size: 100%;
   mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   display: flex;
   width: 35%;
 }
@@ -670,13 +689,16 @@ a {
   background-color: #229df9;
 }
 .categories--palette .filet, .categories--palette .filet_droit {
-  background-color: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
-  background: linear-gradient(left top, right bottom, from(#3d9339), to(#bfff7e));
-  -webkit-mask: url(/P3_ohmyfood/images/filet4.svg) no-repeat center;
-  mask: url(/P3_ohmyfood/images/filet4.svg) no-repeat center;
+  background: linear-gradient(90deg, #3d9339, #bfff7e);
+  -webkit-mask: url(./images/filet4.svg);
+  mask: url(./images/filet4.svg);
   display: flex;
   -webkit-mask-size: 100%;
   mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   width: 25%;
   background-color: #bfff7e;
 }
