@@ -1,3 +1,9 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
 .intro {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -19,6 +25,7 @@
     @include ecran {
         margin: auto;
         margin-top: 4%;
+        max-width: 980px;
     }
     &--note{
         font-family: 'Sriracha', cursive;
@@ -312,11 +319,15 @@
     &--note .filet,
     &--note .filet_droit {
         background-color:$cd-menu1;
-        -webkit-mask: url(/P3_ohmyfood/images/filet1.svg) no-repeat center;
-        mask: url(/P3_ohmyfood/images/filet1.svg) no-repeat center;
+        -webkit-mask: url(./images/filet1.svg)  ;
+        mask: url(./images/filet1.svg) ;
         display: flex;
         -webkit-mask-size: 100%;
         mask-size: 100%;
+        mask-position: center;
+        -webkit-mask-position: center; 
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat:no-repeat;
         width: 25%;
 
         @include tablette_ecran {
@@ -328,10 +339,14 @@
 
     &--chic .filet,
     &--chic .filet_droit {
-        -webkit-mask: url(/P3_ohmyfood/images/filet2.svg) no-repeat center;
-        mask: url(/P3_ohmyfood/images/filet2.svg) no-repeat center;
+        -webkit-mask: url(./images/filet2.svg) ;
+        mask: url(./images/filet2.svg) ;
         -webkit-mask-size: 100%;
         mask-size: 100%;
+        mask-position: center;
+        -webkit-mask-position: center; 
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat:no-repeat;
         display: flex;
         width: 25%;
     }
@@ -356,10 +371,14 @@
 
     &--delice .filet,
     &--delice .filet_droit {
-        -webkit-mask: url(/P3_ohmyfood/images/filet3.svg) no-repeat center;
-        mask: url(/P3_ohmyfood/images/filet3.svg) no-repeat center;
+        -webkit-mask: url(./images/filet3.svg) ;
+        mask: url(./images/filet3.svg) ;
         -webkit-mask-size: 100%;
-        mask-size: 100%;        
+        mask-size: 100%;  
+        mask-position: center;
+        -webkit-mask-position: center; 
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat:no-repeat;      
         display: flex;
         width: 35%;
 
@@ -387,13 +406,17 @@
 
     &--palette .filet,
     &--palette .filet_droit {
-        background-color: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
-        background:linear-gradient(left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
-        -webkit-mask: url(/P3_ohmyfood/images/filet4.svg) no-repeat center;
-        mask: url(/P3_ohmyfood/images/filet4.svg) no-repeat center;
+        // background-color: -webkit-gradient(linear, left top, right bottom, from($cd-gradient-menu4-valeur1), to($cd-gradient-menu4-valeur2));
+        background:linear-gradient(90deg,$cd-gradient-menu4-valeur1, $cd-gradient-menu4-valeur2);
+        -webkit-mask: url(./images/filet4.svg) ;
+        mask: url(./images/filet4.svg) ;
         display: flex;
         -webkit-mask-size: 100%;
         mask-size: 100%;
+        mask-position: center;
+        -webkit-mask-position: center; 
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat:no-repeat;
         width: 25%;
         background-color: $cd-gradient-menu4-valeur2;
 
@@ -402,9 +425,7 @@
         }
     }
 
-    // img {
-    //     width: 100%;
-    // }
+
 }
 
 /*contenu du menu*/
